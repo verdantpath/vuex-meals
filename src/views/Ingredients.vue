@@ -18,12 +18,12 @@ import { computed } from "@vue/reactivity";
 import { onMounted, ref } from 'vue';
 import axiosClient from '../axiosClient';
 
-const keyword = ref('')
+const keyword = ref("")
 const ingredients = ref([])
 const computedIngredients = computed(() => {
   if (!computedIngredients) return ingredients;
   return ingredients.value.filter( i => {
-    debugger;
+    // debugger;
     i.strIngredient.toLowerCase().includes(keyword.value.toLowerCase()) 
   
   }) 
