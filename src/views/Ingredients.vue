@@ -1,6 +1,8 @@
 <template>
   <div class="p-8">
     <h1 class="text-4xl font-bold mb-4">Ingredients</h1>
+    <pre>{{ computedIngredients }}</pre>
+    <pre>{{ ingredients }}</pre>
     <input 
       type="text" 
       v-model="keyword"
