@@ -1,6 +1,6 @@
 <template>
   <div class="p-8 pb-0">
-    <h1 class="text-4xl font-bold mb-4">Ingredients</h1>
+    <h1 class="text-4xl font-bold mb-4 text-orange-500">Ingredients</h1>
   </div>
     <!-- <pre><strong>computedIngredients:</strong> {{ computedIngredients }}</pre>
     <pre>ingredients: {{ ingredients }}</pre> -->
@@ -11,7 +11,7 @@
       class="rounded border-2 border-gray-200 focus:border-orange-500 w-full mb-3" 
       placeholder="Search for Ingredients" 
     />
-    <div class="grid grid-cols-1 md:grid-cols-2 gap:3">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
       <a href="#"
         @click.prevent="openIngredient(ingredient)"
         v-for="ingredient of computedIngredients" 
